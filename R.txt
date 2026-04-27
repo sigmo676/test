@@ -1,1 +1,1 @@
-powershell.exe -Command "& { param([string]$text='SHALOEEEDM'); $TTS=New-Object -ComObject SAPI.SpVoice; foreach ($voice in $TTS.GetVoices()) { if ($voice.GetDescription() -like '*English*') { $TTS.Voice = $voice } }; $TTS.Speak($text) }"
+powershell.exe -Command "& { param([string]$text='RRRRRRRRRRRRRFFFFFF'); $TTS=New-Object -ComObject SAPI.SpVoice; foreach ($voice in $TTS.GetVoices()) { if ($voice.GetDescription() -like '*English*') { $TTS.Voice = $voice } }; $TTS.Speak($text) }"
