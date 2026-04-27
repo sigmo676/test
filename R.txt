@@ -1,8 +1,1 @@
-param([string]$text="SHALOM")
-$TTS=New-Object -ComObject SAPI.SpVoice
-foreach ($voice in $TTS.GetVoices()) {
-    if ($voice.GetDescription() -like "*English*") {
-        $TTS.Voice=$voice
-    }
-}
-$TTS.Speak($text)
+powershell.exe -Command "& { param([string]$text='SHALOM'); $TTS=New-Object -ComObject SAPI.SpVoice; foreach ($voice in $TTS.GetVoices()) { if ($voice.GetDescription() -like '*English*') { $TTS.Voice = $voice } }; $TTS.Speak($text) }"
